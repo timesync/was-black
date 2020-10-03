@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HelloWorld msg="Wonder if this will keep adding ports?"/>
 </template>
 
 <script>
@@ -14,7 +14,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "./css/global.scss";
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
