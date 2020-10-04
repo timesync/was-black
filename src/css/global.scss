@@ -7,3 +7,21 @@
 body {
     background-color: $color-mauve-medium-dark-purple;
 }
+
+/*****************************************************************
+ * Animations
+ **/
+@keyframes gentle-rotation {
+    0% {
+        transform: rotate(9.2deg);
+    }
+    33% {
+        transform: rotate(4.2deg);
+    }
+    66% {
+        transform: rotate(6.2deg);
+    }
+    100% {
+        transform: rotate(8.2deg);
+    }
+}

@@ -1,28 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Wonder if this will keep adding ports?"/>
+  <div id="background-rect" />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   }
 }
 </script>
 
-<style lang="scss">
-@import "./css/global.scss";
+<style lang="scss" scoped>
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+#background-rect {
+  width: 38%;
+  height: 83vh;
+  margin: 74px auto;
+
+  background: $color-mauve-dark-purple;
+  transform: rotate(9.2deg);
+
+  animation-name: gentle-rotation;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
 }
+
 </style>
