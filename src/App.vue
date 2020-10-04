@@ -16,7 +16,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 #background {
   z-index: 0;
@@ -49,13 +49,6 @@ export default {
   height: 99vh;
 
   color: $color-cream;
-  font-size: 6.25rem;
+  font-size: #{"clamp(2.5rem, 0.2119rem + 10.1695vw, 6.25rem)"};
 }
-
-.absolute-center {
-  display: flex; // make use of Flexbox
-  align-items: center; // does vertically center the desired content
-  justify-content: center; // horizontally centers single line items
-  text-align: center; // optional, but helps horizontally center text that breaks into multiple lines
-}  
 </style>
